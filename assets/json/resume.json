@@ -23,7 +23,8 @@
       "url": "https://umbc.edu",
       "area": "Applied Mathematics",
       "studyType": "Ph.D.",
-      "startDate": "2022-09-01",
+      "startDate": "09/2022",
+      "endDate":"Present",
       "score": "4.0"
     },
     {
@@ -31,24 +32,24 @@
       "url": "https://www.wku.edu",
       "area": "Applied Mathematics",
       "studyType": "M.Sc.",
-      "startDate": "September 2020",
-      "endDate": "June 2022",
+      "startDate": "09/2020",
+      "endDate": " 06/2022",
       "score": "4.0"
     },
     {
       "institution": "Istanbul University",
       "url": "https://www.istanbul.edu.tr/en/",
       "studyType": "Pedagogical Formation",
-      "startDate": "September 2018",
-      "endDate": "June 2019"
+      "startDate": "09/2018",
+      "endDate": "06/2019"
     },
     {
       "institution": "Yildiz Technical University",
       "url": "hhttps://www.yildiz.edu.tr/en",
       "area": "Mathematics",
       "studyType": "B.Sc.",
-      "startDate": "September 2015",
-      "endDate": "May 2019",
+      "startDate": "09/2015",
+      "endDate": "06/2019",
       "score": "3.14"
     }
   ],
@@ -57,7 +58,7 @@
       "name": "University of Maryland Baltimore County",
       "position": "Teaching Assistant",
       "location": "Baltimore, MD",
-      "startDate": "September 2022",
+      "startDate": "09/2022",
       "endDate": "Present",
       "highlights": [
         "Led seminars and discussions for Precalculus, Applied Calculus, and Multivariable Calculus cources by creating lesson plans, quizzes, and holding office hours which ensured student success resulting in positive evaluations."
@@ -67,8 +68,8 @@
       "name": "Wolfram Research",
       "position": "Intern",
       "location": "Campaign, IL",
-      "startDate": "June 2023",
-      "endDate": "August 2023",
+      "startDate": "06/2023",
+      "endDate": "08/2023",
       "highlights": [
         "Created mathematics content for Wolfram|Alpha engine in the field of Linear Algebra.",
         "Developed step-by-step solutions and implemendted them. The projects include finding the dimensions of a matrix, Kronecker Product, and matrix decomposition methods such as LU, Cholesky, and QR.",
@@ -79,8 +80,8 @@
       "name": "Western Kentucky University",
       "position": "Research Assistant",
       "location": "Bowling Green, KY",
-      "startDate": "August 2021",
-      "endDate": "August 2022",
+      "startDate": "08/2021",
+      "endDate": "08/2022",
       "highlights": [
         "Supported by the National Science Foundation done research on robust boundary sensor design for finite/infinite dimensional laminated beam models.",
         "Supervised a team of three undergraduate students from Dr. Özer’s research group to develop Wolfram Demonstration Projects (WDP) describing vibrations on multi-layer beams consisting of different materials and boundary conditions.",
@@ -91,8 +92,8 @@
       "name": "Western Kentucky University",
       "position": "Teaching Assistant",
       "location": "Bowling Green, KY",
-      "startDate": "September 2020",
-      "endDate": "August 2021",
+      "startDate": "09/2020",
+      "endDate": "08/2021",
       "highlights": [
         "Led recitation sessions, created content, graded assignments, and tutored students in Calculus courses.",
         "Tutored at the Mathematics Testing Center for the summer of 2021.",
@@ -104,8 +105,8 @@
       "name": "Asil Wedding Rings",
       "position": "Production Manager",
       "location": "Istanbul, Turkey",
-      "startDate": "June 2019",
-      "endDate": "February 2020",
+      "startDate": "06/2019",
+      "endDate": "02/2020",
       "highlights": [
         "Prepared alloy mixture to be used in production where quality and high efficiency are dependent on the choice and ratio of materials.",
         "Gained experience in designing 3D models via AutoCAD and use of appropriate CNC and laser fiber machines."
@@ -115,8 +116,8 @@
       "name": "Haydar Akin Vocational High School",
       "position": "Mathematics Teacher",
       "location": "Istanbul, Turkey",
-      "startDate": "September 2018",
-      "endDate": "May 2019",
+      "startDate": "09/2018",
+      "endDate": "05/2019",
       "highlights": [
         "Taught 9th and 10th-grade mathematics courses for a semester with the supervision of a Mathematics teacher and a pedagogical expert.",
         "Ensured student success by preparing course materials, and communicating with parents."
@@ -127,7 +128,7 @@
     {
       "organization": "SIAM Student Chapter",
       "position": "President",
-      "startDate": "September 2020",
+      "startDate": "09/2020",
       "endDate": "Present",
       "highlights": [
         "Organized student chapter booths at festivals and conferences. Attended regional and national SIAM chapter meetings as the university representative.",
@@ -137,8 +138,8 @@
     {
       "organization": "Western Kentucky University",
       "position": "The Graduate Council Member",
-      "startDate": "September 2021",
-      "endDate": "May 2022",
+      "startDate": "09/2021",
+      "endDate": "05/2022",
       "highlights": [
         "Reviewed policy and coursework changes recommended by various committees and gained experience in the administrative process.",
         "Identified and offered solutions within the graduate school as the College of Science and Engineering representative."
@@ -147,8 +148,8 @@
     {
       "organization": "Western Kentucky University",
       "position": "Student Research Grants Committee Member",
-      "startDate": "September 2021",
-      "endDate": "May 2022",
+      "startDate": "09/2021",
+      "endDate": "05/2022",
       "highlights": [
         "Reviewed the grant applications as a committee STEM expert and made recommendations on the appropriate budget allocations."
       ]
