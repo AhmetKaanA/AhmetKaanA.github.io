@@ -17,6 +17,5 @@ social: false  # includes social icons at the bottom of the page
 ---
 
 Hello there! I'm a Ph.D. student in applied mathematics at UMBC, passionate about numerical analysis, particularly in the applications to partial differential equations (PDEs) like the Navier-Stokes equation with my advisor, Dr. Bedrich Sousedik. My other research involves the boundary feedback control of coupled systems with the team of Dr. Ozkan Ozer.
-[You can find my resume HERE!](assets/pdf/Aydin_Resume.pdf)
 
-Whether you're a high school student eager to delve into projects like Wolfram Demonstration projects, an undergraduate seeking collaboration on mathematical explorations, a fellow Ph.D. student on the lookout for research partnerships, or a postdoc faculty member seeking a student for your projects, I'm here to connect and collaborate. Don't hesitate to reach out at <a href='mailto:aaydin1@umbc.edu'>aaydin1@umbc.edu</a> - I'm always excited to engage in meaningful academic discussions and collaborations.
+A recent resume can be found[HERE!](assets/pdf/Aydin_Resume.pdf) Please reach out at <a href='mailto:aaydin1@umbc.edu'>aaydin1@umbc.edu</a>.
