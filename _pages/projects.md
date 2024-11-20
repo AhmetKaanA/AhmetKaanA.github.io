@@ -5,7 +5,7 @@ permalink: /projects/
 description:
 nav: true
 nav_order: 4
-display_categories: [Ongoing, Wolfram Demonstration Projects]
+display_categories: [work, fun, Wolfram Demonstration Projects]
 horizontal: false
 ---
 

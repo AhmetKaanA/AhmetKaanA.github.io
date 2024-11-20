@@ -7,19 +7,15 @@ importance: 1
 category: Wolfram Demonstration Projects
 related_publications: true
 ---
-
-Every project has a beautiful feature showcase page.
-It's easy to include images in a flexible 3-column grid format.
-Make your photos 1/3, 2/3, or full width.
-
-To give your project a background in the portfolio page, just add the img tag to the front matter like so:
-
-    ---
-    layout: page
-    title: project
-    description: a project with a background image
-    img: /assets/img/12.jpg
-    ---
+This demonstration project explore a magnetizable smart (piezoelectric) beam model of unit length subjected to a dynamic tip load. There are significant interactions between electromagnetic and acoustic waves, characterized by differences in wave propagation speeds. The yellow strips on the top and bottom surfaces of the beam represent electrodes that are perfectly bonded to the piezoelectric material. The blue section represents a tip mass 
+m
+ which dynamically couples with the beam's strain at the tip. Use the sliders to adjust default material parameters. The initialization code has detailed instructions.
+The system employs a non-collocated observer-controller design. Two controllers positioned at the right end manage mechanical and electromagnetic vibrations using applied voltage and strain controllers, while the observer dynamics at the left tip guide these controllers. The first two gauges track error terms—the difference between observation and control systems—measuring the left tip velocity and total current. The third and fourth gauges represent controller dynamics, showing the right tip velocity and 
+η
+-dynamics which describe the combined effects of the tip load and controllers. Simulations are performed over a 
+1
+0-second interval for preset initial conditions.
+This Demonstration highlights the efficacy of the observer-controller system in stabilizing both mechanical and electromagnetic vibrations, validating theoretical results[1, 2]. Through the applied voltage and strain controllers, the system achieves rapid stabilization, underscoring the potential practical applications of the proposed control strategy in advanced piezoelectric devices.
 
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
