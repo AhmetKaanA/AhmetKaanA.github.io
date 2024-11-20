@@ -3,9 +3,9 @@ layout: page
 title: Projects
 permalink: /projects/
 description:
-nav: false
+nav: true
 nav_order: 4
-display_categories: [Ongoing, Completed]
+display_categories: [Ongoing, Wolfram Demonstration Projects]
 horizontal: false
 ---
 

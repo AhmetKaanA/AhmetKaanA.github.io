@@ -1,10 +1,10 @@
 ---
 layout: page
-title: project 1
+title: Stabilization of a Smart Beam with a Tip Mass
 description: a project with a background image
-img: assets/img/12.jpg
+img: assets/img/wdpBeamMass.png
 importance: 1
-category: work
+category: Wolfram Demonstration Projects
 related_publications: true
 ---
 
