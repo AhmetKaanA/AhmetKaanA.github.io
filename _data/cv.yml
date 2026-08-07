@@ -1,97 +1,316 @@
-- title: General Information
-  type: map
-  contents:
-    - name: Full Name
-      value: Albert Einstein
-    - name: Date of Birth
-      value: 14th March 1879
-    - name: Languages
-      value: English, German
+cv:
+  name: Ahmet Kaan Aydin
+  label: Ph.D. Candidate in Applied Mathematics
+  email: aaydin1@umbc.edu
+  phone: "+1 (270) 996-6074"
+  website: https://ahmetkaana.github.io
+  location: Baltimore, Maryland
+  image: ""
+  summary: >-
+    Ph.D. Candidate in Applied Mathematics at the University of Maryland,
+    Baltimore County. My research focuses on numerical methods for partial
+    differential equations, uncertainty quantification, low-rank scientific
+    computing, stochastic Galerkin methods, and control of distributed
+    parameter systems.
 
-- title: Education
-  type: time_table
-  contents:
-    - title: PhD
-      institution: University of Zurich, Zurich, Switzerland
-      year: 1905
-      description:
-        - Description 1.
-        - Description 2.
-        - title: Description 3.
-          contents:
-            - Sub-description 1.
-            - Sub-description 2.
-    - title: Federal teaching diploma
-      institution: Eidgenössische Technische Hochschule, Zurich, Switzerland
-      year: 1900
-      description:
-        - Description 1.
-        - Description 2.
+  social_networks:
+    - network: LinkedIn
+      username: ahmetkaanaydin
+    - network: Google Scholar
+      username: iKOWChUAAAAJ
+    - network: ResearchGate
+      username: Ahmet-Aydin-8
 
-- title: Experience
-  type: time_table
-  contents:
-    - title: Professor of Theoretical Physics
-      institution: Institute for Advanced Study, Princeton University
-      year: 1933 - 1955
-      description:
-        - Description 1.
-        - Description 2.
-        - title: Description 3.
-          contents:
-            - Sub-description 1.
-            - Sub-description 2.
-    - title: Visiting Professor
-      institution: California Institute of Technology, Pasadena, California, US
-      year: 1933
-      description:
-        - Description 1.
-        - Description 2.
+  address:
+    city: Baltimore
+    region: Maryland
+    countryCode: US
 
-    - title: Director
-      institution: Kaiser Wilhelm Institute for Physics, Berlin, Germany.
-      year: 1917-1933
+  sections:
+    Education:
+      - institution: University of Maryland, Baltimore County
+        location: Baltimore, Maryland
+        area: Applied Mathematics
+        studyType: Ph.D.
+        start_date: 2022
+        end_date: Present
+        highlights:
+          - Outstanding Graduate Teaching Assistant in the Field of Mathematics, 2026.
 
-    - title: Professor of Theoretical Physics
-      institution: Karl-Ferdinand University, Prague, Czechoslovakia
-      year: 1911 - 1917
-      description:
+      - institution: University of Maryland, Baltimore County
+        location: Baltimore, Maryland
+        area: Applied Mathematics
+        studyType: M.Sc.
+        start_date: 2022
+        end_date: 2024
+        highlights:
+          - Earned en route to the Ph.D.
 
-    - title: Associate Professor of Theoretical Physics
-      institution: University of Zurich, Zurich, Switzerland
-      year: 1909 - 1911
+      - institution: Western Kentucky University
+        location: Bowling Green, Kentucky
+        area: Mathematics
+        studyType: M.Sc.
+        start_date: 2020
+        end_date: 2022
+        highlights:
+          - "Thesis: *Robust Sensor Design for the Novel Reduced Models of the Mead--Marcus Sandwich Beam Equation*."
+          - John D. Minton Award.
+          - Outstanding Graduate Student Award.
 
-- title: Open Source Projects
-  type: time_table
-  contents:
-    - title: <a href="https://github.com/alshedivat/al-folio">al-folio</a>
-      year: 2015-now
-      description: A beautiful, simple, clean, and responsive Jekyll theme for academics.
+      - institution: Istanbul University
+        location: Istanbul, Turkey
+        area: Pedagogical Formation
+        studyType: Certificate
+        start_date: 2018
+        end_date: 2019
+        highlights:
+          - Completed a one-year pedagogical formation program with supervised classroom teaching.
 
-- title: Honors and Awards
-  type: time_table
-  contents:
-    - year: 1921
-      items: 
-        - Nobel Prize in Physics 
-        - Matteucci Medal
-    - year: 2029
-      items: 
-        - Max Planck Medal
+      - institution: Yildiz Technical University
+        location: Istanbul, Turkey
+        area: Mathematics
+        studyType: B.Sc.
+        start_date: 2015
+        end_date: 2019
+        highlights:
+          - "Senior project: *Affine and Projective Planes*."
 
-- title: Academic Interests
-  type: nested_list
-  contents:
-    - title: Topic 1.
-      items: 
-        - Description 1.
-        - Description 2.
-    - title: Topic 2.
-      items:
-        - Description 1.
-        - Description 2.
+    Experience:
+      - company: University of Maryland, Baltimore County
+        position: Graduate Assistant
+        location: Baltimore, Maryland
+        start_date: 2022-07
+        end_date: Present
+        highlights:
+          - Design iterative numerical solvers for optimal-control problems governed by the Navier--Stokes equations.
+          - Develop MATLAB tools for stochastic Galerkin finite-element methods in fluid dynamics.
+          - Incorporate low-rank approximation techniques, including Tensor Train decompositions.
 
-- title: Other Interests
-  type: list
-  contents:
-    - <u>Hobbies:</u> Hobby 1, Hobby 2, etc.
+      - company: University of Maryland, Baltimore County
+        position: Instructor of Record
+        location: Baltimore, Maryland
+        start_date: 2024
+        end_date: Present
+        highlights:
+          - "MATH 120: Introduction to Contemporary Mathematics, Fall 2026."
+          - "MATH 150: Precalculus, Summer 2026."
+          - "MATH 152: Calculus II, Spring 2026 and Summer 2025."
+          - "MATH 221: Introduction to Linear Algebra, Winter 2026."
+          - "MATH 106: Algebra and Elementary Functions, Fall 2025."
+          - "MATH 151: Calculus I, Summer 2024."
+
+      - company: University of Maryland, Baltimore County
+        position: Orientation Advisor
+        location: Baltimore, Maryland
+        start_date: 2024-03
+        end_date: Present
+        highlights:
+          - Advised incoming undergraduate students.
+
+      - company: Wolfram
+        position: Intern
+        location: Remote
+        start_date: 2023-06
+        end_date: 2023-08
+        highlights:
+          - Created linear-algebra content for the Wolfram|Alpha engine.
+          - Developed step-by-step solutions for matrix dimensions, Kronecker products, and LU, Cholesky, and QR decompositions.
+
+      - company: Western Kentucky University
+        position: Research Assistant
+        location: Bowling Green, Kentucky
+        start_date: 2021-09
+        end_date: 2022-06
+        highlights:
+          - Conducted NSF-supported research on robust boundary-sensor design for finite- and infinite-dimensional laminated-beam models.
+          - Supervised undergraduate students developing Wolfram Demonstration Projects on multilayer-beam vibrations.
+
+      - company: Western Kentucky University
+        position: Teaching Assistant
+        location: Bowling Green, Kentucky
+        start_date: 2020-09
+        end_date: 2021-07
+        highlights:
+          - Tutored students in the Mathematics Testing Center.
+          - Completed Graduate Teaching Assistant Institute modules I and II.
+          - Received a Summer 2021 assistantship and an offer to serve as a graduate instructor.
+
+      - company: Haydar Akin Vocational High School
+        position: Mathematics Teacher
+        location: Istanbul, Turkey
+        start_date: 2018-12
+        end_date: 2019-06
+        highlights:
+          - Taught ninth- and tenth-grade mathematics under the supervision of a mathematics teacher and a pedagogical expert.
+
+    Publications:
+      - title: A Nonlinear Model Reduction Based Stochastic Galerkin Solver for the Unsteady Navier--Stokes Equations
+        authors:
+          - Ahmet Kaan Aydin
+          - J. Li
+        publisher: Manuscript in preparation
+        releaseDate: 2026
+        summary: In preparation.
+
+      - title: A Mean-Informed Low-Rank Monolithic Stochastic Galerkin Solver for the Unsteady Navier--Stokes Equations
+        authors:
+          - Ahmet Kaan Aydin
+          - Bedrich Sousedik
+        publisher: SIAM Journal on Scientific Computing
+        releaseDate: 2026
+        summary: Submitted.
+
+      - title: Robust Model Reductions for the Boundary Feedback Stabilization of Magnetizable Piezoelectric Beams
+        authors:
+          - Ahmet Kaan Aydin
+          - Ahmet Ozkan Ozer
+          - Jacob Walterman
+        publisher: Evolution Equations and Control Theory
+        releaseDate: 2026
+        url: https://doi.org/10.3934/eect.2026041
+        summary: "Volume 21, pages 244--276."
+
+      - title: Exponential Stability and Design of Sensor Feedback Amplifiers for Fast Stabilization of Magnetizable Piezoelectric Beam Equations
+        authors:
+          - Ahmet Ozkan Ozer
+          - Ahmet Kaan Aydin
+          - Rafi Emran
+        publisher: IEEE Transactions on Automatic Control
+        releaseDate: 2025
+        url: https://doi.org/10.1109/TAC.2024.3462917
+        summary: "Volume 70, pages 1374--1379."
+
+      - title: A New Semi-Discretization of the Fully Clamped Euler--Bernoulli Beam Preserving Boundary Observability Uniformly
+        authors:
+          - Ahmet Kaan Aydin
+          - Md Zulfiqur Haider
+          - Ahmet Ozkan Ozer
+        publisher: IEEE Control Systems Letters
+        releaseDate: 2024
+        url: https://doi.org/10.1109/LCSYS.2024.3519379
+        summary: "Volume 8, pages 2955--2960."
+
+      - title: A Novel Sensor Design for a Cantilevered Mead--Marcus-Type Sandwich Beam Model by the Order-Reduction Technique
+        authors:
+          - Ahmet Ozkan Ozer
+          - Ahmet Kaan Aydin
+        publisher: "ESAIM: Control, Optimisation and Calculus of Variations"
+        releaseDate: 2023
+        summary: "Volume 29, article 74."
+
+      - title: A Novel Finite Difference-Based Model Reduction and a Sensor Design for a Multilayer Smart Beam with Arbitrary Number of Layers
+        authors:
+          - Ahmet Kaan Aydin
+          - Ahmet Ozkan Ozer
+          - Jacob Walterman
+        publisher: IEEE Control Systems Letters
+        releaseDate: 2023
+        url: https://doi.org/10.1109/LCSYS.2023.3274698
+        summary: "Volume 7, pages 1548--1553."
+
+      - title: Robust-Filtering of Sensor Data for the Finite Difference Model Reduction of a Piezoelectric Sandwich Beam
+        authors:
+          - Ahmet Ozkan Ozer
+          - Ahmet Kaan Aydin
+        publisher: 61st IEEE Conference on Decision and Control
+        releaseDate: 2022
+        url: https://doi.org/10.1109/CDC51059.2022.9992484
+        summary: Cancun, Mexico.
+
+    Invited Talks:
+      - bullet: "**SIAM Conference on Uncertainty Quantification (UQ26)** — Minneapolis, Minnesota, March 2026."
+      - bullet: "**Joint Mathematics Meetings** — Washington, DC, January 2026."
+      - bullet: "**Mid-Atlantic Numerical Analysis Day** — Philadelphia, Pennsylvania, November 2025."
+      - bullet: "**Finite Element Circus** — Arlington, Virginia, October 2025."
+      - bullet: "**AMS Western Sectional Meeting** — San Luis Obispo, California, May 2025."
+      - bullet: "**WKU AMS Graduate Student Chapter Talk** — Virtual, April 2025."
+      - bullet: "**AMS Central Sectional Meeting** — Milwaukee, Wisconsin, April 2024."
+      - bullet: "**62nd IEEE Conference on Decision and Control** — Singapore, December 2023."
+      - bullet: "**Mid-Atlantic Numerical Analysis Day** — Philadelphia, Pennsylvania, November 2023."
+      - bullet: "**SIAM Central States Section Meeting** — Lincoln, Nebraska, October 2023."
+      - bullet: "**SIAM Conference on Control and Its Applications (CT23)** — Philadelphia, Pennsylvania, July 2023."
+      - bullet: "**AIMS Conference on Dynamical Systems, Differential Equations and Applications** — Wilmington, North Carolina, June 2023."
+      - bullet: "**SIAM Southeastern Atlantic Section Meeting** — Blacksburg, Virginia, March 2023."
+      - bullet: "**Joint Mathematics Meetings** — Boston, Massachusetts, January 2023."
+      - bullet: "**61st IEEE Conference on Decision and Control** — Cancun, Mexico, December 2022."
+      - bullet: "**AMS Southeastern Sectional Meeting** — Chattanooga, Tennessee, October 2022."
+      - bullet: "**SIAM Pacific Northwest Section Meeting** — Vancouver, Washington, May 2022."
+      - bullet: "**Joint Mathematics Meetings** — April 2022."
+      - bullet: "**Kentucky Section of the Mathematical Association of America Annual Meeting** — Virtual, April 2022."
+      - bullet: "**WKU Student Research Conference** — Bowling Green, Kentucky, March 2022."
+      - bullet: "**41st WKU Mathematics Symposium** — Bowling Green, Kentucky, February 2022."
+      - bullet: "**Kentucky Academy of Science Annual Meeting** — Virtual, November 2021."
+
+    Teaching Development:
+      - bullet: "Completed CIRTL achievement levels at the **Associate** and **Practitioner** levels."
+      - bullet: "Completed a CIRTL Teaching-as-Research project, *Developing Students' Symbol Sense with Targeted Practice*, Summer 2025."
+      - bullet: "Completed a one-year Pedagogical Formation program at Istanbul University, 2018--2019."
+      - bullet: "Completed Graduate Teaching Assistant Institute modules I and II at Western Kentucky University."
+
+    Leadership:
+      - bullet: "**IEEE CSS NextCom:** General Activities Co-Chair, 2025--Present; Virtual Ambassador, 2023--2025."
+      - bullet: "**UMBC Graduate Student Association:** President, July 2026--Present; Vice President, July 2025--July 2026; Senator for the College of Natural and Mathematical Sciences, July 2024--July 2025."
+      - bullet: "**UMBC University Steering Committee:** Member, July 2025--Present."
+      - bullet: "**UMBC Classroom Committee:** Member, July 2024--July 2025."
+      - bullet: "**UMBC Graduate Student Organizations Committee:** Member, July 2024--July 2025."
+      - bullet: "**UMBC Graduate Assistant Advisory Committee:** Member, July 2024--July 2025."
+      - bullet: "**SIAM Student Chapter, UMBC:** President, 2022--2024."
+      - bullet: "**SIAM Student Chapter, Western Kentucky University:** President, 2020--2022."
+      - bullet: "**The Graduate Council, Western Kentucky University:** Member, September 2021--June 2022."
+      - bullet: "**Student Research Grants Committee, Western Kentucky University:** Member, September 2021--June 2022."
+
+    Awards:
+      - title: Outstanding Graduate Teaching Assistant
+        date: 2026
+        awarder: University of Maryland, Baltimore County
+
+      - title: SIAM Student Chapter Certificate of Recognition
+        date: 2024
+        awarder: University of Maryland, Baltimore County
+
+      - title: John D. Minton Award
+        date: 2022
+        awarder: Western Kentucky University
+        summary: The highest university-wide award given to a single graduate student.
+
+      - title: Outstanding Graduate Student Award
+        date: 2022
+        awarder: Western Kentucky University
+
+      - title: Kentucky NSF EPSCoR SuperCollider Best Presentation Award
+        date: 2022
+        awarder: Kentucky NSF EPSCoR
+
+      - title: SIAM Student Chapter Certificate of Recognition
+        date: 2022
+        awarder: Western Kentucky University
+
+      - title: Dr. James H. Stuteville Scholarship
+        date: 2022
+        awarder: Western Kentucky University
+
+      - title: Hugh F. and Katherine A. Johnson Mathematics Scholarship
+        date: 2021
+        awarder: Western Kentucky University
+
+    Workshops:
+      - bullet: "**CIRTL Teaching-as-Research Project**, Summer 2025 — *Developing Students' Symbol Sense with Targeted Practice*."
+      - bullet: "**62nd IEEE Conference on Decision and Control Workshop**, Singapore, December 2023 — *Modern Adaptive Control and Estimation: From Theory to Applications*."
+      - bullet: "**SIAM Mathematical Problems in Industry Workshop**, New Jersey, 2023 — *Bubbles in Flow Streams and Porous Media*."
+      - bullet: "**SIAM Graduate Student Mathematical Modeling Camp**, Delaware, 2023 — *Modeling of Drying Process in Porous Media*."
+
+    Wolfram Demonstration Projects:
+      - bullet: "[*Stabilization of a Smart Beam with a Tip Mass*](https://demonstrations.wolfram.com/StabilizationOfASmartBeamWithATipMass/), 2024."
+      - bullet: "[*Rapid Stabilization of Heat and Structure Interactions with Boundary Feedback Controllers*](https://demonstrations.wolfram.com/RapidStabilizationOfHeatAndStructureInteractionsWithBoundary/), 2024."
+      - bullet: "[*Stabilization of the Wave Equation by Direct Fourier Filtering*](https://demonstrations.wolfram.com/StabilizationOfTheWaveEquationByDirectFourierFiltering/), 2024."
+      - bullet: "[*Dynamics of a Longitudinal Piezoelectric Beam*](https://demonstrations.wolfram.com/DynamicsOfALongitudinalPiezoelectricBeam/), 2023."
+      - bullet: "[*Vibration Suppression on a Hinged Three-Layer Sandwich Beam*](https://demonstrations.wolfram.com/VibrationSuppressionOnAHingedThreeLayerSandwichBeam/), 2022."
+      - bullet: "[*Feedback Sensor Design for a Cantilevered Three-Layer Sandwich Beam*](https://demonstrations.wolfram.com/FeedbackSensorDesignForACantileveredThreeLayerSandwichBeam/), 2022."
+      - bullet: "[*Boundary-Feedback Control of Vibrations on a String with and without Filtering*](https://demonstrations.wolfram.com/BoundaryFeedbackControlOfVibrationsOnAStringWithAndWithoutFi/), 2022."
+
+    Professional Service:
+      - bullet: "**Nonlinear Analysis: Real World Applications** — Reviewer, 2026--Present."
+      - bullet: "**American Control Conference** — Reviewer, 2025--Present."
+      - bullet: "**AMS Mathematical Reviews / MathSciNet** — Reviewer, 2025--Present."
+      - bullet: "**IEEE Control Systems Letters** — Reviewer, 2024--Present."
+      - bullet: "**IEEE Conference on Decision and Control** — Reviewer, 2024--Present."

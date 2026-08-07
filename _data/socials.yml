@@ -1,0 +1,21 @@
+# Social and academic profile links for Ahmet Kaan Aydin
+# Links are displayed in the order they are defined.
+# Add only profiles you actively maintain.
+
+cv_pdf: /assets/pdf/aydin_cv.pdf
+email: aaydin1@umbc.edu
+scholar_userid: iKOWChUAAAAJ
+research_gate_profile: Ahmet-Aydin-8
+orcid_id: 0009-0006-6278-2046
+github_username: AhmetKaanA
+linkedin_username: ahmetkaanaydin
+
+# Add these when the exact account identifiers are available:
+
+# semanticscholar_id: YOUR_SEMANTIC_SCHOLAR_ID
+# scopus_id: YOUR_SCOPUS_AUTHOR_ID
+# dblp_url: https://dblp.org/pid/...
+# zotero_username: YOUR_ZOTERO_USERNAME
+
+# Keep hidden while the blog is inactive.
+# rss_icon: true

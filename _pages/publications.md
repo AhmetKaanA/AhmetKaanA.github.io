@@ -1,17 +1,41 @@
 ---
 layout: page
 permalink: /publications/
-title: publications
-description:  
+title: Publications
+description: Peer-reviewed papers, conference proceedings, reports, and interactive projects.
 nav: true
-nav_order: 1
+nav_order: 3
 ---
 
-Following is some of my peer reviewed publications. For a more detailed list I invite you to check my  <a href='https://scholar.google.com/citations?user=iKOWChUAAAAJ&hl=en'>Google Scholar</a> or <a href='https://www.researchgate.net/profile/Ahmet-Aydin-8'>ResearchGate</a> 
+For a complete and regularly updated citation record, visit my
+[Google Scholar](https://scholar.google.com/citations?user=iKOWChUAAAAJ&hl=en)
+or [ResearchGate](https://www.researchgate.net/profile/Ahmet-Aydin-8) profile.
 
-<!-- _pages/publications.md -->
+## Papers
+
 <div class="publications">
 
-{% bibliography %}
+{% bibliography --file papers %}
 
 </div>
+
+## Reports
+
+<div class="publications">
+
+{% bibliography --file reports %}
+
+</div>
+
+## Wolfram Demonstration Projects
+
+  <p>
+    These reviewed interactive projects illustrate selected ideas from my work
+    in partial differential equations, vibration control, filtering, and smart structures.
+  </p>
+
+  <div class="publications">
+
+{% bibliography --file demonstrations %}
+
+  </div>
