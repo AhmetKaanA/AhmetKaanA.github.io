@@ -177,6 +177,4 @@ For the benchmark reported in the manuscript:
 - The TT representation maintains at least a $7{:}1$ compression ratio at the most demanding stage of the solve, corresponding to an $86\%$ reduction in memory for the velocity vector.
 - A rank-one CP approximation of the global velocity block provides an inexpensive preconditioner and performs particularly well across the tested time-step regimes.
 
-**Related manuscript:** Ahmet Kaan Aydin and Bedřich Sousedík,
-_A Mean-Informed Low-Rank Monolithic Stochastic Galerkin Solver for the
-Unsteady Navier–Stokes Equations_.
+The work is now available as an arXiv preprint. {% cite aydin2026meaninformed %}
