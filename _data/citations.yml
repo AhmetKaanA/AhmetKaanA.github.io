@@ -1,5 +1,5 @@
 metadata:
-  last_updated: '2026-08-12'
+  last_updated: '2026-08-14'
 papers:
   iKOWChUAAAAJ:1sJd4Hv_s6UC:
     citations: 0
@@ -45,6 +45,10 @@ papers:
     citations: 0
     title: Robust-filtering of sensor data for the approximation of the multi-layer Mead-Marcus beam equation
     year: Unknown Year
+  iKOWChUAAAAJ:_B80troHkn4C:
+    citations: 0
+    title: A Mean-Informed Low-Rank Monolithic Stochastic Galerkin Solver for the Unsteady Navier-Stokes Equations
+    year: '2026'
   iKOWChUAAAAJ:_FxGoFyzp5QC:
     citations: 0
     title: Robust Model Reductions for the Boundary Feedback Stabilization of Magnetizable Piezoelectric Beam Equations
