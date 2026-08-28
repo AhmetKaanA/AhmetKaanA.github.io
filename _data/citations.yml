@@ -1,5 +1,5 @@
 metadata:
-  last_updated: '2026-08-14'
+  last_updated: '2026-08-28'
 papers:
   iKOWChUAAAAJ:1sJd4Hv_s6UC:
     citations: 0
@@ -54,7 +54,7 @@ papers:
     title: Robust Model Reductions for the Boundary Feedback Stabilization of Magnetizable Piezoelectric Beam Equations
     year: Unknown Year
   iKOWChUAAAAJ:_xSYboBqXhAC:
-    citations: 13
+    citations: 14
     title: Exponential stability and design of sensor feedback amplifiers for fast stabilization of magnetizable piezoelectric beam equations
     year: '2024'
   iKOWChUAAAAJ:bFI3QPDXJZMC:
