@@ -57,7 +57,23 @@ description: This page collects a few personal milestones, research highlights, 
   }
 </style>
 
-## Highlights and recognition
+## Recent updates
+
+{% include news.liquid %}
+
+### 2026 Doctoral Candidacy Ceremony remarks
+
+<div class="personal-news-video shadow rounded overflow-hidden">
+  <iframe
+    src="https://www.youtube-nocookie.com/embed/Mh1E_mMXcVA"
+    title="Ahmet Kaan Aydin's remarks as GSA President at UMBC's 2026 Doctoral Candidacy Ceremony"
+    loading="lazy"
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+    allowfullscreen
+  ></iframe>
+</div>
+
+## Earlier highlights and recognition
 
 <div class="personal-news-video shadow rounded overflow-hidden">
   <iframe
@@ -186,7 +202,3 @@ description: This page collects a few personal milestones, research highlights, 
     </div>
   </div>
 </div>
-
-## Additional updates
-
-{% include news.liquid %}

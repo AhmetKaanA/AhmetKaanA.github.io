@@ -1,6 +1,85 @@
 const { test, expect } = require("@playwright/test");
 const { preparePage, stabilizeVisuals } = require("./helpers");
 
+test("home page shows contact links and four research highlights before news", async ({ page }, testInfo) => {
+  await preparePage(page, "light");
+  await page.goto("/al-folio/", { waitUntil: "networkidle" });
+
+  const social = page.locator("article .home-social");
+  await expect(social).toHaveCount(1);
+  await expect(page.locator("article .social")).toHaveCount(1);
+  await expect(social.locator(".contact-icons a")).toHaveCount(7);
+  await expect(social.locator(".contact-note")).toContainText("Email is the best way");
+
+  const topics = [
+    { slug: "low-rank-stochastic-navier-stokes", title: "Low-Rank Stochastic Navier–Stokes Solvers", image: "navier-stokes.webp" },
+    { slug: "observability-preserving-discretizations", title: "Observability-Preserving Discretizations", image: "observability-comparison.gif" },
+    {
+      slug: "piezoelectric-beam-stabilization",
+      title: "Piezoelectric Beam Stabilization",
+      image: "piezoelectric-beam-stabilization.gif",
+      imagePath: "projects/piezoelectric-beam-stabilization",
+    },
+    { slug: "cell-migration", title: "Border Cell Migration in the Drosophila Egg Chamber", image: "cell-migration.gif" },
+  ];
+  const cards = page.locator(".home-research-card");
+  await expect(cards).toHaveCount(topics.length);
+
+  for (const [index, topic] of topics.entries()) {
+    const card = cards.nth(index);
+    await expect(card).toHaveAttribute("href", `/al-folio/projects/${topic.slug}/`);
+    await expect(card.locator(".home-research-card-title")).toHaveText(topic.title);
+    await expect(card.locator(".home-research-card-description")).toHaveCount(0);
+    const image = card.locator("img");
+    const imagePath = topic.imagePath || "research-highlights";
+    await expect(image).toHaveAttribute("src", `/al-folio/assets/img/${imagePath}/${topic.image}`);
+    await image.scrollIntoViewIfNeeded();
+    await expect.poll(() => image.evaluate((node) => node.complete && node.naturalWidth > 0)).toBeTruthy();
+    expect((await page.request.get(`/al-folio/projects/${topic.slug}/`)).ok()).toBeTruthy();
+  }
+
+  const cardRects = await cards.evaluateAll((nodes) =>
+    nodes.map((node) => {
+      const card = node.getBoundingClientRect();
+      const image = node.querySelector("img").getBoundingClientRect();
+      return { x: card.x, y: card.y, imageWidth: image.width, imageHeight: image.height };
+    })
+  );
+  for (const [index, card] of cardRects.entries()) {
+    const ratio = index < 2 ? 108 / 149 : 531 / 764;
+    expect(Math.abs(card.imageHeight - card.imageWidth * ratio)).toBeLessThan(2);
+  }
+  if (testInfo.project.name === "mobile") {
+    expect(cardRects[1].y).toBeGreaterThan(cardRects[0].y);
+  } else {
+    expect(Math.abs(cardRects[1].y - cardRects[0].y)).toBeLessThan(2);
+    expect(Math.abs(cardRects[1].imageHeight - cardRects[0].imageHeight)).toBeLessThan(2);
+  }
+
+  const order = await page.evaluate(() => {
+    const article = document.querySelector("article");
+    const intro = article.querySelector(".clearfix > p");
+    const socialLinks = article.querySelector(".home-social");
+    const research = article.querySelector(".home-research");
+    const upcoming = [...article.querySelectorAll("h2")].find((node) => node.textContent.trim() === "Upcoming");
+    const news = article.querySelector('h2 a[href$="/news/"]')?.closest("h2");
+    const before = (first, second) => Boolean(first.compareDocumentPosition(second) & Node.DOCUMENT_POSITION_FOLLOWING);
+
+    return {
+      introBeforeSocial: before(intro, socialLinks),
+      socialBeforeResearch: before(socialLinks, research),
+      researchBeforeUpcoming: !upcoming || before(research, upcoming),
+      researchBeforeNews: before(research, news),
+    };
+  });
+  expect(order).toEqual({
+    introBeforeSocial: true,
+    socialBeforeResearch: true,
+    researchBeforeUpcoming: true,
+    researchBeforeNews: true,
+  });
+});
+
 test("publications Abs toggle opens and closes", async ({ page }) => {
   await preparePage(page, "light");
   await page.goto("/al-folio/publications/", { waitUntil: "networkidle" });

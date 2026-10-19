@@ -11,14 +11,13 @@ I enjoy helping students develop both mathematical technique and the confidence 
 
 ## Courses taught at UMBC
 
+- [MATH 120 — Introduction to Contemporary Mathematics, Fall 2026]({% link _teachings/math-120-fall-2026.md %})
 - [MATH 150 — Precalculus, Summer 2026]({% link _teachings/math-150-summer-2026.md %})
 - [MATH 152 — Calculus and Analytic Geometry II, Spring 2026]({% link _teachings/math-152-spring-2026.md %})
 - [MATH 221 — Introduction to Linear Algebra, Winter 2026]({% link _teachings/math-221-winter-2026.md %})
 - [MATH 106 — Algebra and Elementary Functions, Fall 2025]({% link _teachings/math-106-fall-2025.md %})
 - [MATH 152 — Calculus and Analytic Geometry II, Summer 2025]({% link _teachings/math-152-summer-2025.md %})
 - [MATH 151 — Calculus and Analytic Geometry I, Summer 2024]({% link _teachings/math-151-summer-2024.md %})
-
-**Upcoming:** MATH 120 — Introduction to Contemporary Mathematics, Fall 2026.
 
 ## Selected student feedback
 
@@ -75,7 +74,7 @@ The following anonymous comments were selected from end-of-course evaluations. N
 
 I received UMBC's **Outstanding Graduate Teaching Assistant in the Field of Mathematics** recognition in 2026. My formal preparation also includes a one-year **Pedagogical Formation** program at Istanbul University (2018–2019), which included supervised teaching of ninth- and tenth-grade mathematics, and Graduate Teaching Assistant Institute training at Western Kentucky University.
 
-I completed teaching certifications at the **Scholar** and **Practitioner** levels through the [Center for the Integration of Research, Teaching, and Learning at UMBC](https://gspd.umbc.edu/about-cirtl/). CIRTL supports the development of evidence-based, inclusive, and reflective teaching practices for future faculty. Additional information is available through the [CIRTL Network](https://cirtl.net/).
+I completed teaching certifications at the **Associate** and **Practitioner** levels through the [Center for the Integration of Research, Teaching, and Learning at UMBC](https://gspd.umbc.edu/about-cirtl/). CIRTL supports the development of evidence-based, inclusive, and reflective teaching practices for future faculty. Additional information is available through the [CIRTL Network](https://cirtl.net/).
 
 My work toward these certifications included the following teaching-development activities:
 
