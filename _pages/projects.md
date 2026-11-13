@@ -9,6 +9,15 @@ display_categories: [Research, SoTL, Wolfram Demonstrations]
 horizontal: false
 ---
 
+<style>
+  /* Keep card titles readable in the narrow three-column cards. */
+  .projects .card-title {
+    font-size: 1.25rem;
+    font-weight: 500;
+    line-height: 1.35;
+  }
+</style>
+
 My work develops computational methods for partial differential equations, with an emphasis on preserving mathematical structure while making large-scale models practical to solve.
 
 <!-- pages/projects.md -->

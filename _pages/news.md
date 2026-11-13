@@ -57,11 +57,11 @@ description: This page collects a few personal milestones, research highlights, 
   }
 </style>
 
-## Recent updates
+## Recent Updates
 
 {% include news.liquid %}
 
-### 2026 Doctoral Candidacy Ceremony remarks
+### 2026 Doctoral Candidacy Ceremony Remarks
 
 <div class="personal-news-video shadow rounded overflow-hidden">
   <iframe
@@ -73,7 +73,7 @@ description: This page collects a few personal milestones, research highlights, 
   ></iframe>
 </div>
 
-## Earlier highlights and recognition
+## Earlier Highlights and Recognition
 
 <div class="personal-news-video shadow rounded overflow-hidden">
   <iframe

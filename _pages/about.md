@@ -4,11 +4,6 @@ title: About
 permalink: /
 subtitle: Ph.D. Candidate in Applied Mathematics
 
-profile:
-  align: right
-  image: prof_pic.jpg
-  image_circular: false # crops the image to make it circular
-  more_info: >
 selected_papers: true # includes a list of papers marked as "selected={true}"
 social: false # social links are shown below the introduction instead
 
@@ -28,6 +23,20 @@ latest_posts:
     .post .profile {
       width: 184px;
     }
+  }
+
+  /* The theme hard-codes these section headings in lowercase ("news", "selected publications"). */
+  .post article > h2 {
+    text-transform: capitalize;
+  }
+
+  .home-job-callout {
+    display: flow-root; /* keeps the box beside the floated headshot */
+    margin: 1.25rem 0 0;
+    padding: 0.75rem 1rem;
+    border-left: 4px solid var(--global-theme-color);
+    border-radius: 0.25rem;
+    background: color-mix(in srgb, var(--global-theme-color) 12%, transparent);
   }
 
   .home-social {
@@ -110,7 +119,12 @@ latest_posts:
   }
 </style>
 
-I am a Ph.D. Candidate in Applied Mathematics at the University of Maryland, Baltimore County (UMBC). My current research interests include numerical analysis, scientific computing, uncertainty quantification, low-rank methods based on tensor decomposition, and the observer/controller design for partial differential equations.
+<!-- Headshot is placed here instead of via `profile.image` so it can have real alt text (the theme uses the file name). -->
+<div class="profile float-right">
+  {% include figure.liquid loading="eager" path="assets/img/prof_pic.jpg" class="img-fluid z-depth-1 rounded" sizes="(min-width: 840px) 184px, (min-width: 576px) 30vw, 95vw" alt="Portrait of Ahmet Kaan Aydin" cache_bust=true %}
+</div>
+
+I am a Ph.D. Candidate in Applied Mathematics at the University of Maryland, Baltimore County (UMBC). My current research interests include numerical analysis, scientific computing, uncertainty quantification, low-rank methods based on tensor decomposition, and the observer/controller design for partial differential equations. I also build 3D phase-field simulations of collective cell migration, following border cells as they travel through the growing _Drosophila_ egg chamber.
 
 <!-- My recent research focuses on low-rank stochastic Galerkin solvers for the unsteady Navier–Stokes equations, including all-at-once formulations, tensor decompositions, and efficient preconditioners. I also work on numerical models for smart structures, with an emphasis on boundary observability, sensor design, and feedback stabilization for Euler–Bernoulli, sandwich, and piezoelectric beam equations.
 
@@ -120,13 +134,17 @@ I enjoy contributing to the academic community through student leadership and pr
 
 You can explore my [research]({{ '/research/' | relative_url }}), [publications]({{ '/publications/' | relative_url }}), and [teaching]({{ '/teaching/' | relative_url }}) on this website.
 
+<div class="home-job-callout" role="note">
+  <strong>On the job market.</strong> I am available starting summer 2027 and welcome inquiries about opportunities.
+</div>
+
 <div class="social home-social">
   <div class="contact-icons">{% social_links %}</div>
   <div class="contact-note">{{ site.contact_note }}</div>
 </div>
 
 <section class="home-research" aria-labelledby="home-research-title">
-  <h2 id="home-research-title">Research highlights</h2>
+  <h2 id="home-research-title">Research Highlights</h2>
   <div class="home-research-grid">
     <a class="home-research-card home-research-card--featured home-research-card--cell-cluster" href="{{ '/projects/cell-cluster-migration/' | relative_url }}">
       <video src="{{ '/assets/img/research-highlights/cell-cluster-home.mp4' | relative_url }}" poster="{{ '/assets/img/research-highlights/cell-cluster-home-poster.webp' | relative_url }}" width="1000" height="250" autoplay muted loop playsinline preload="metadata" aria-label="Simulated cluster of ten cells traveling between nurse cells toward the egg cell, shown in 3D and in two cuts"></video>

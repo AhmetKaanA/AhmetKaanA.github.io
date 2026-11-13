@@ -24,7 +24,9 @@ keywords: >
   scientific computing, partial differential equations,
   uncertainty quantification, stochastic Galerkin methods,
   low-rank tensor methods, Navier-Stokes equations,
-  control theory, piezoelectric beams, sensor design
+  mathematical biology, cell migration, phase-field models,
+  optimal transport, control theory, boundary observability,
+  piezoelectric beams, smart structures, sensor design
 
 lang: en # the language of your site (for example: en, fr, cn, ru, etc.)
 icon: ⚛️ # the emoji used as the favicon (alternatively, provide image name in /assets/img/)
@@ -109,9 +111,9 @@ max_width: 930px
 # -----------------------------------------------------------------------------
 # Display links to the page with a preview object on social media.
 # see https://schema.org/docs/faq.html for more information
-serve_og_meta: false # Include Open Graph meta tags in the HTML head
-serve_schema_org: false # Include Schema.org in the HTML head
-og_image: # The site-wide (default for all links) Open Graph preview image
+serve_og_meta: true # Include Open Graph meta tags in the HTML head
+serve_schema_org: true # Include Schema.org in the HTML head
+og_image: https://ahmetkaana.github.io/assets/img/og-preview.jpg # The site-wide (default for all links) Open Graph preview image; must be an absolute URL
 
 # -----------------------------------------------------------------------------
 # Analytics and search engine verification

@@ -9,7 +9,7 @@ nav_order: 4
 
 I enjoy helping students develop both mathematical technique and the confidence to explain why a method works. My teaching emphasizes careful interpretation of notation, connections among representations, regular low-stakes practice, and opportunities for students to revisit ideas as their understanding develops.
 
-## Courses taught at UMBC
+## Courses Taught at UMBC
 
 - [MATH 120 — Introduction to Contemporary Mathematics, Fall 2026]({% link _teachings/math-120-fall-2026.md %})
 - [MATH 150 — Precalculus, Summer 2026]({% link _teachings/math-150-summer-2026.md %})
@@ -19,7 +19,7 @@ I enjoy helping students develop both mathematical technique and the confidence 
 - [MATH 152 — Calculus and Analytic Geometry II, Summer 2025]({% link _teachings/math-152-summer-2025.md %})
 - [MATH 151 — Calculus and Analytic Geometry I, Summer 2024]({% link _teachings/math-151-summer-2024.md %})
 
-## Selected student feedback
+## Selected Student Feedback
 
 The following anonymous comments were selected from end-of-course evaluations. Numerical evaluation summaries and syllabi are available on the individual course pages.
 
@@ -70,7 +70,7 @@ The following anonymous comments were selected from end-of-course evaluations. N
   </div>
 </div>
 
-## Teaching development and recognition
+## Teaching Development and Recognition
 
 I received UMBC's **Outstanding Graduate Teaching Assistant in the Field of Mathematics** recognition in 2026. My formal preparation also includes a one-year **Pedagogical Formation** program at Istanbul University (2018–2019), which included supervised teaching of ninth- and tenth-grade mathematics, and Graduate Teaching Assistant Institute training at Western Kentucky University.
 

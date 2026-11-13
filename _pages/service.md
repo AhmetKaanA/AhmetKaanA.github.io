@@ -161,7 +161,7 @@ Service is an important part of my academic work. My current efforts focus on re
   </div>
 </div>
 
-## Peer-review service
+## Peer-Review Service
 
 I contribute to the mathematical and control-systems communities by reviewing journal articles, conference submissions, and research summaries.
 
