@@ -39,12 +39,12 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout 🛎️
-        uses: actions/checkout@v4
+        uses: actions/checkout@v6
 
       - name: Setup Ruby 💎
         uses: ruby/setup-ruby@v1
         with:
-          ruby-version: "3.3.5"
+          ruby-version: "3.3"
           bundler-cache: true
 
       - name: Run upgrade audit 🧪
@@ -52,7 +52,7 @@ jobs:
 
       - name: Upload upgrade report 📄
         if: always()
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v6
         with:
           name: al-folio-upgrade-report
           path: al-folio-upgrade-report.md

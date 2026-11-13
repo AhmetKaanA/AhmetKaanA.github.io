@@ -3,7 +3,7 @@ layout: page
 title: Piezoelectric Beam Stabilization
 description: Boundary-feedback design for fast suppression of coupled mechanical and electromagnetic vibrations.
 img: assets/img/projects/piezoelectric-beam-stabilization/piezoelectric-beam-schematiccontrols.png
-importance: 3
+importance: 5
 category: Research
 related_publications: true
 ---

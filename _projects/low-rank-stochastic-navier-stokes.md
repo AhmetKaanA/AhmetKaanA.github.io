@@ -3,7 +3,7 @@ layout: page
 title: Low-Rank Stochastic Navier–Stokes Solvers
 description: Low-rank tensor-decomposition-based solvers for time-dependent Navier–Stokes equations with stochastic viscosity.
 img: assets/img/projects/low-rank-navier-stokes/mean-flow-fields.png
-importance: 1
+importance: 3
 category: Research
 related_publications: true
 ---

@@ -76,14 +76,19 @@ latest_posts:
   }
 
   .home-research-card--navier-stokes img,
-  .home-research-card--observability img {
-    aspect-ratio: 149 / 108;
-    object-fit: contain;
-  }
-
+  .home-research-card--observability img,
   .home-research-card--piezoelectric img,
   .home-research-card--cell-migration img {
     aspect-ratio: 764 / 531;
+    object-fit: contain;
+  }
+
+  .home-research-card--featured {
+    grid-column: 1 / -1;
+  }
+
+  .home-research-card--cell-cluster img {
+    aspect-ratio: 4 / 1;
     object-fit: contain;
   }
 
@@ -122,6 +127,18 @@ You can explore my [research]({{ '/research/' | relative_url }}), [publications]
 <section class="home-research" aria-labelledby="home-research-title">
   <h2 id="home-research-title">Research highlights</h2>
   <div class="home-research-grid">
+    <a class="home-research-card home-research-card--featured home-research-card--cell-cluster" href="{{ '/projects/cell-cluster-migration/' | relative_url }}">
+      <img src="{{ '/assets/img/projects/cell-cluster-migration/home-thumbnail-v2.gif' | relative_url }}" alt="Simulated cluster of ten cells traveling between nurse cells toward the egg cell, shown in 3D and in two cuts" width="1000" height="250" loading="lazy">
+      <span class="home-research-card-body">
+        <strong class="home-research-card-title">Border Cell Migration, Cell by Cell: Interactions Inside the Cluster</strong>
+      </span>
+    </a>
+    <a class="home-research-card home-research-card--cell-migration" href="{{ '/projects/cell-migration/' | relative_url }}">
+      <img src="{{ '/assets/img/research-highlights/cell-migration-growing.gif' | relative_url }}" alt="Three-dimensional border-cell cluster traveling to the oocyte while the egg chamber grows" width="650" height="452" loading="lazy">
+      <span class="home-research-card-body">
+        <strong class="home-research-card-title">Border Cell Migration in the Drosophila Egg Chamber</strong>
+      </span>
+    </a>
     <a class="home-research-card home-research-card--navier-stokes" href="{{ '/projects/low-rank-stochastic-navier-stokes/' | relative_url }}">
       <img src="{{ '/assets/img/research-highlights/navier-stokes.webp' | relative_url }}" alt="Animation of flow streamlines and pressure through a constricted channel" width="745" height="540" loading="lazy">
       <span class="home-research-card-body">
@@ -138,12 +155,6 @@ You can explore my [research]({{ '/research/' | relative_url }}), [publications]
       <img src="{{ '/assets/img/projects/piezoelectric-beam-stabilization/piezoelectric-beam-stabilization.gif' | relative_url }}" alt="Piezoelectric beam stabilization simulation with energy, sensor, and actuator gauges" width="1528" height="1062" loading="lazy">
       <span class="home-research-card-body">
         <strong class="home-research-card-title">Piezoelectric Beam Stabilization</strong>
-      </span>
-    </a>
-    <a class="home-research-card home-research-card--cell-migration" href="{{ '/projects/cell-migration/' | relative_url }}">
-      <img src="{{ '/assets/img/research-highlights/cell-migration.gif' | relative_url }}" alt="Cropped three-dimensional border-cell cluster animation without the time label" width="620" height="431" loading="lazy">
-      <span class="home-research-card-body">
-        <strong class="home-research-card-title">Border Cell Migration in the Drosophila Egg Chamber</strong>
       </span>
     </a>
   </div>

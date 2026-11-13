@@ -3,7 +3,7 @@ layout: page
 title: Observability-Preserving Discretizations
 description: Numerical discretizations that preserve the boundary observability and control properties of continuous beam models by addressing spurious high-frequency modes introduced by standard methods.
 img: assets/img/projects/observability-preserving-discretizations/obsmemeNEW.png
-importance: 2
+importance: 4
 category: Research
 related_publications: true
 ---
