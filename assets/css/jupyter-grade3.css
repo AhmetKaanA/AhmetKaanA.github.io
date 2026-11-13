@@ -369,6 +369,14 @@ textarea {
   color: #828892;
 }
 
+:-ms-input-placeholder {
+  color: #828892;
+}
+
+:-moz-placeholder {
+  color: #828892;
+}
+
 ::-webkit-scrollbar {
   width: 11px;
   max-height: 9px;
@@ -515,6 +523,18 @@ hr {
   -webkit-box-shadow: none;
   box-shadow: none;
   z-index: 10;
+}
+
+#clusters > a {
+  color: #ef5c00;
+  text-decoration: underline;
+  cursor: auto;
+}
+
+#clusters > a:hover {
+  color: #126dce;
+  text-decoration: underline;
+  cursor: auto;
 }
 
 mark,

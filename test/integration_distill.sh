@@ -11,6 +11,11 @@ cleanup() {
 trap cleanup EXIT
 
 cat >"${tmp_override}" <<'YAML'
+# The site itself may turn distill off; the test always checks it with distill on.
+al_folio:
+  features:
+    distill:
+      enabled: true
 giscus:
   repo: alshedivat/al-folio
   repo_id: R_kgDOExample
