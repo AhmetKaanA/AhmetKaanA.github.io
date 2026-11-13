@@ -123,12 +123,9 @@ These intervals depend on the material properties of the beam but not on its ini
 
 <div class="row justify-content-center">
   <div class="col-12 col-lg-10 mt-3">
-    {% include figure.liquid
-      loading="lazy"
-      path="assets/img/projects/piezoelectric-beam-stabilization/piezoelectric-beam-stabilization.gif"
-      title="Piezoelectric beam stabilization simulation"
-      class="img-fluid rounded z-depth-1"
-    %}
+    <figure>
+      <video src="{{ '/assets/img/projects/piezoelectric-beam-stabilization/piezoelectric-beam-stabilization.mp4' | relative_url }}" poster="{{ '/assets/img/projects/piezoelectric-beam-stabilization/piezoelectric-beam-stabilization-poster.webp' | relative_url }}" class="img-fluid rounded z-depth-1" width="1528" height="1062" autoplay muted loop playsinline preload="metadata" title="Piezoelectric beam stabilization simulation" aria-label="Piezoelectric beam stabilization simulation"></video>
+    </figure>
   </div>
 </div>
 

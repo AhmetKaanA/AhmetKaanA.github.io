@@ -58,21 +58,27 @@ The eigenvalues of the corresponding control problem showcase the spurious modes
 
 <div class="row">
   <div class="col-lg-4 col-md-6 mt-3 mt-md-0">
-    {% include figure.liquid loading="lazy" path="assets/img/projects/observability-preserving-discretizations/unfiltered-discretization.gif" title="Unfiltered discretization simulation" class="img-fluid rounded z-depth-1" %}
+    <figure>
+      <video src="{{ '/assets/img/projects/observability-preserving-discretizations/unfiltered-discretization.mp4' | relative_url }}" poster="{{ '/assets/img/projects/observability-preserving-discretizations/unfiltered-discretization-poster.webp' | relative_url }}" class="img-fluid rounded z-depth-1" width="806" height="450" autoplay muted loop playsinline preload="metadata" title="Unfiltered discretization simulation" aria-label="Unfiltered discretization simulation"></video>
+    </figure>
     <div class="caption">
       <strong>Unfiltered:</strong> the standard discretization retains spurious high-frequency activity and decays slowly.
     </div>
   </div>
 
   <div class="col-lg-4 col-md-6 mt-3 mt-md-0">
-    {% include figure.liquid loading="lazy" path="assets/img/projects/observability-preserving-discretizations/filtered-discretization.gif" title="Fourier-filtered discretization simulation" class="img-fluid rounded z-depth-1" %}
+    <figure>
+      <video src="{{ '/assets/img/projects/observability-preserving-discretizations/filtered-discretization.mp4' | relative_url }}" poster="{{ '/assets/img/projects/observability-preserving-discretizations/filtered-discretization-poster.webp' | relative_url }}" class="img-fluid rounded z-depth-1" width="806" height="450" autoplay muted loop playsinline preload="metadata" title="Fourier-filtered discretization simulation" aria-label="Fourier-filtered discretization simulation"></video>
+    </figure>
     <div class="caption">
       <strong>Filtered:</strong> direct Fourier filtering removes the unstable portion of the numerical spectrum and restores effective damping.
     </div>
   </div>
 
   <div class="col-lg-4 col-md-6 mt-3 mt-md-0">
-    {% include figure.liquid loading="lazy" path="assets/img/projects/observability-preserving-discretizations/orfd-discretization.gif" title="Order-reduced finite-difference discretization simulation" class="img-fluid rounded z-depth-1" %}
+    <figure>
+      <video src="{{ '/assets/img/projects/observability-preserving-discretizations/orfd-discretization.mp4' | relative_url }}" poster="{{ '/assets/img/projects/observability-preserving-discretizations/orfd-discretization-poster.webp' | relative_url }}" class="img-fluid rounded z-depth-1" width="806" height="450" autoplay muted loop playsinline preload="metadata" title="Order-reduced finite-difference discretization simulation" aria-label="Order-reduced finite-difference discretization simulation"></video>
+    </figure>
     <div class="caption">
       <strong>ORFD:</strong> the order-reduced discretization preserves the desired observability behavior directly, without needing an added filter.
     </div>

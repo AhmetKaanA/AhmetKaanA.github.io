@@ -67,7 +67,8 @@ latest_posts:
     outline-offset: 3px;
   }
 
-  .home-research-card img {
+  .home-research-card img,
+  .home-research-card video {
     display: block;
     width: 100%;
     height: auto;
@@ -76,9 +77,9 @@ latest_posts:
   }
 
   .home-research-card--navier-stokes img,
-  .home-research-card--observability img,
-  .home-research-card--piezoelectric img,
-  .home-research-card--cell-migration img {
+  .home-research-card--observability video,
+  .home-research-card--piezoelectric video,
+  .home-research-card--cell-migration video {
     aspect-ratio: 764 / 531;
     object-fit: contain;
   }
@@ -87,7 +88,7 @@ latest_posts:
     grid-column: 1 / -1;
   }
 
-  .home-research-card--cell-cluster img {
+  .home-research-card--cell-cluster video {
     aspect-ratio: 4 / 1;
     object-fit: contain;
   }
@@ -128,13 +129,13 @@ You can explore my [research]({{ '/research/' | relative_url }}), [publications]
   <h2 id="home-research-title">Research highlights</h2>
   <div class="home-research-grid">
     <a class="home-research-card home-research-card--featured home-research-card--cell-cluster" href="{{ '/projects/cell-cluster-migration/' | relative_url }}">
-      <img src="{{ '/assets/img/projects/cell-cluster-migration/home-thumbnail-v2.gif' | relative_url }}" alt="Simulated cluster of ten cells traveling between nurse cells toward the egg cell, shown in 3D and in two cuts" width="1000" height="250" loading="lazy">
+      <video src="{{ '/assets/img/research-highlights/cell-cluster-home.mp4' | relative_url }}" poster="{{ '/assets/img/research-highlights/cell-cluster-home-poster.webp' | relative_url }}" width="1000" height="250" autoplay muted loop playsinline preload="metadata" aria-label="Simulated cluster of ten cells traveling between nurse cells toward the egg cell, shown in 3D and in two cuts"></video>
       <span class="home-research-card-body">
         <strong class="home-research-card-title">Border Cell Migration, Cell by Cell: Interactions Inside the Cluster</strong>
       </span>
     </a>
     <a class="home-research-card home-research-card--cell-migration" href="{{ '/projects/cell-migration/' | relative_url }}">
-      <img src="{{ '/assets/img/research-highlights/cell-migration-growing.gif' | relative_url }}" alt="Three-dimensional border-cell cluster traveling to the oocyte while the egg chamber grows" width="650" height="452" loading="lazy">
+      <video src="{{ '/assets/img/research-highlights/cell-migration-home.mp4' | relative_url }}" poster="{{ '/assets/img/research-highlights/cell-migration-home-poster.webp' | relative_url }}" width="640" height="446" autoplay muted loop playsinline preload="metadata" aria-label="Three-dimensional border-cell cluster traveling to the oocyte while the egg chamber grows"></video>
       <span class="home-research-card-body">
         <strong class="home-research-card-title">Border Cell Migration in the Drosophila Egg Chamber</strong>
       </span>
@@ -146,13 +147,13 @@ You can explore my [research]({{ '/research/' | relative_url }}), [publications]
       </span>
     </a>
     <a class="home-research-card home-research-card--observability" href="{{ '/projects/observability-preserving-discretizations/' | relative_url }}">
-      <img src="{{ '/assets/img/research-highlights/observability-comparison.gif' | relative_url }}" alt="Unfiltered and ORFD beam animations with energy, sensor, and actuator gauges" width="480" height="348" loading="lazy">
+      <video src="{{ '/assets/img/research-highlights/observability-home.mp4' | relative_url }}" poster="{{ '/assets/img/research-highlights/observability-home-poster.webp' | relative_url }}" width="480" height="348" autoplay muted loop playsinline preload="metadata" aria-label="Unfiltered and ORFD beam animations with energy, sensor, and actuator gauges"></video>
       <span class="home-research-card-body">
         <strong class="home-research-card-title">Observability-Preserving Discretizations</strong>
       </span>
     </a>
     <a class="home-research-card home-research-card--piezoelectric" href="{{ '/projects/piezoelectric-beam-stabilization/' | relative_url }}">
-      <img src="{{ '/assets/img/projects/piezoelectric-beam-stabilization/piezoelectric-beam-stabilization.gif' | relative_url }}" alt="Piezoelectric beam stabilization simulation with energy, sensor, and actuator gauges" width="1528" height="1062" loading="lazy">
+      <video src="{{ '/assets/img/research-highlights/piezoelectric-home.mp4' | relative_url }}" poster="{{ '/assets/img/research-highlights/piezoelectric-home-poster.webp' | relative_url }}" width="640" height="444" autoplay muted loop playsinline preload="metadata" aria-label="Piezoelectric beam stabilization simulation with energy, sensor, and actuator gauges"></video>
       <span class="home-research-card-body">
         <strong class="home-research-card-title">Piezoelectric Beam Stabilization</strong>
       </span>

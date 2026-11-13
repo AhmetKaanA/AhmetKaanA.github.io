@@ -16,7 +16,9 @@ _Every animation on this page is a computer simulation, not a microscope recordi
 
 <div class="row justify-content-center">
   <div class="col-12 mt-3">
-    {% include figure.liquid loading="lazy" path="assets/img/projects/cell-cluster-migration/journey-v2.gif" title="The cluster traveling through the egg chamber" class="img-fluid rounded z-depth-1" %}
+    <figure>
+      <video src="{{ '/assets/img/projects/cell-cluster-migration/journey-v2.mp4' | relative_url }}" poster="{{ '/assets/img/projects/cell-cluster-migration/journey-v2-poster.webp' | relative_url }}" class="img-fluid rounded z-depth-1" width="1100" height="348" autoplay muted loop playsinline preload="metadata" title="The cluster traveling through the egg chamber" aria-label="The cluster traveling through the egg chamber"></video>
+    </figure>
   </div>
 </div>
 <div class="caption">
@@ -42,7 +44,9 @@ The cluster first waits in the tip for more than half of the travel time. Then i
 
 <div class="row justify-content-center">
   <div class="col-12 col-lg-10 mt-3">
-    {% include figure.liquid loading="lazy" path="assets/img/projects/cell-cluster-migration/section-v2.gif" title="The nurse cells make way for the cluster" class="img-fluid rounded z-depth-1" %}
+    <figure>
+      <video src="{{ '/assets/img/projects/cell-cluster-migration/section-v2.mp4' | relative_url }}" poster="{{ '/assets/img/projects/cell-cluster-migration/section-v2-poster.webp' | relative_url }}" class="img-fluid rounded z-depth-1" width="860" height="476" autoplay muted loop playsinline preload="metadata" title="The nurse cells make way for the cluster" aria-label="The nurse cells make way for the cluster"></video>
+    </figure>
   </div>
 </div>
 <div class="caption">
@@ -64,7 +68,9 @@ The real cluster has two kinds of cells: several **border cells** on the outside
 
 <div class="row justify-content-center">
   <div class="col-12 col-lg-10 mt-3">
-    {% include figure.liquid loading="lazy" path="assets/img/projects/cell-cluster-migration/cluster-closeup-v2.gif" title="The cluster up close" class="img-fluid rounded z-depth-1" %}
+    <figure>
+      <video src="{{ '/assets/img/projects/cell-cluster-migration/cluster-closeup-v2.mp4' | relative_url }}" poster="{{ '/assets/img/projects/cell-cluster-migration/cluster-closeup-v2-poster.webp' | relative_url }}" class="img-fluid rounded z-depth-1" width="760" height="492" autoplay muted loop playsinline preload="metadata" title="The cluster up close" aria-label="The cluster up close"></video>
+    </figure>
   </div>
 </div>
 <div class="caption">
@@ -107,7 +113,9 @@ A model lets us do experiments that are hard to do in a living fly: switch off o
 
 <div class="row justify-content-center">
   <div class="col-12 mt-3">
-    {% include figure.liquid loading="lazy" path="assets/img/projects/cell-cluster-migration/four-runs-v2.gif" title="Four versions of the model side by side" class="img-fluid rounded z-depth-1" %}
+    <figure>
+      <video src="{{ '/assets/img/projects/cell-cluster-migration/four-runs-v2.mp4' | relative_url }}" poster="{{ '/assets/img/projects/cell-cluster-migration/four-runs-v2-poster.webp' | relative_url }}" class="img-fluid rounded z-depth-1" width="960" height="556" autoplay muted loop playsinline preload="metadata" title="Four versions of the model side by side" aria-label="Four versions of the model side by side"></video>
+    </figure>
   </div>
 </div>
 <div class="caption">

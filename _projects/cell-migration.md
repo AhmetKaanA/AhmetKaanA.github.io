@@ -18,7 +18,9 @@ _All animations on this page are computer simulations, not microscope recordings
 
 <div class="row justify-content-center">
   <div class="col-10 col-sm-8 col-md-6 mt-3">
-    {% include figure.liquid loading="lazy" path="assets/img/projects/border-cell-migration/migration-3d-growing.gif" title="The border-cell cluster migrating through the growing egg chamber" class="img-fluid rounded z-depth-1" %}
+    <figure>
+      <video src="{{ '/assets/img/projects/border-cell-migration/migration-3d-growing.mp4' | relative_url }}" poster="{{ '/assets/img/projects/border-cell-migration/migration-3d-growing-poster.webp' | relative_url }}" class="img-fluid rounded z-depth-1" width="456" height="452" autoplay muted loop playsinline preload="metadata" title="The border-cell cluster migrating through the growing egg chamber" aria-label="The border-cell cluster migrating through the growing egg chamber"></video>
+    </figure>
   </div>
 </div>
 <div class="caption">
@@ -40,7 +42,9 @@ Cutting the chamber open shows the path of the cluster. It first presses slowly 
 
 <div class="row justify-content-center">
   <div class="col-12 mt-3">
-    {% include figure.liquid loading="lazy" path="assets/img/projects/border-cell-migration/cut-along-chamber.gif" title="A cut along the chamber" class="img-fluid rounded z-depth-1" %}
+    <figure>
+      <video src="{{ '/assets/img/projects/border-cell-migration/cut-along-chamber.mp4' | relative_url }}" poster="{{ '/assets/img/projects/border-cell-migration/cut-along-chamber-poster.webp' | relative_url }}" class="img-fluid rounded z-depth-1" width="1000" height="388" autoplay muted loop playsinline preload="metadata" title="A cut along the chamber" aria-label="A cut along the chamber"></video>
+    </figure>
   </div>
 </div>
 <div class="caption">
@@ -51,7 +55,9 @@ Cuts across the chamber show the cluster wedged between the nurse cells, and the
 
 <div class="row justify-content-center">
   <div class="col-12 mt-3">
-    {% include figure.liquid loading="lazy" path="assets/img/projects/border-cell-migration/cross-sections.gif" title="Cuts across the chamber that follow the cluster" class="img-fluid rounded z-depth-1" %}
+    <figure>
+      <video src="{{ '/assets/img/projects/border-cell-migration/cross-sections.mp4' | relative_url }}" poster="{{ '/assets/img/projects/border-cell-migration/cross-sections-poster.webp' | relative_url }}" class="img-fluid rounded z-depth-1" width="1100" height="416" autoplay muted loop playsinline preload="metadata" title="Cuts across the chamber that follow the cluster" aria-label="Cuts across the chamber that follow the cluster"></video>
+    </figure>
   </div>
 </div>
 <div class="caption">
@@ -64,7 +70,9 @@ The oocyte releases a chemical signal that spreads through the narrow spaces bet
 
 <div class="row justify-content-center">
   <div class="col-12 mt-3">
-    {% include figure.liquid loading="lazy" path="assets/img/projects/border-cell-migration/guidance-signal.gif" title="The guidance signal along the chamber" class="img-fluid rounded z-depth-1" %}
+    <figure>
+      <video src="{{ '/assets/img/projects/border-cell-migration/guidance-signal.mp4' | relative_url }}" poster="{{ '/assets/img/projects/border-cell-migration/guidance-signal-poster.webp' | relative_url }}" class="img-fluid rounded z-depth-1" width="1000" height="372" autoplay muted loop playsinline preload="metadata" title="The guidance signal along the chamber" aria-label="The guidance signal along the chamber"></video>
+    </figure>
   </div>
 </div>
 <div class="caption">
@@ -88,7 +96,9 @@ How fast the cluster travels depends on how tightly the cells are packed. We rep
 
 <div class="row justify-content-center">
   <div class="col-12 mt-3">
-    {% include figure.liquid loading="lazy" path="assets/img/projects/border-cell-migration/packing-comparison.gif" title="The journey with different amounts of space between the cells" class="img-fluid rounded z-depth-1" %}
+    <figure>
+      <video src="{{ '/assets/img/projects/border-cell-migration/packing-comparison.mp4' | relative_url }}" poster="{{ '/assets/img/projects/border-cell-migration/packing-comparison-poster.webp' | relative_url }}" class="img-fluid rounded z-depth-1" width="1112" height="748" autoplay muted loop playsinline preload="metadata" title="The journey with different amounts of space between the cells" aria-label="The journey with different amounts of space between the cells"></video>
+    </figure>
   </div>
 </div>
 <div class="caption">
@@ -101,7 +111,9 @@ Once the cluster has reached the oocyte, a cut swept through the whole chamber s
 
 <div class="row justify-content-center">
   <div class="col-12 mt-3">
-    {% include figure.liquid loading="lazy" path="assets/img/projects/border-cell-migration/slice-sweep.gif" title="A cut sweeping through the chamber after arrival" class="img-fluid rounded z-depth-1" %}
+    <figure>
+      <video src="{{ '/assets/img/projects/border-cell-migration/slice-sweep.mp4' | relative_url }}" poster="{{ '/assets/img/projects/border-cell-migration/slice-sweep-poster.webp' | relative_url }}" class="img-fluid rounded z-depth-1" width="900" height="434" autoplay muted loop playsinline preload="metadata" title="A cut sweeping through the chamber after arrival" aria-label="A cut sweeping through the chamber after arrival"></video>
+    </figure>
   </div>
 </div>
 <div class="caption">
