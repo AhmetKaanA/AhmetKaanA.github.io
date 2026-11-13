@@ -5,10 +5,16 @@ tmp_dir="$(mktemp -d)"
 tmp_override="${tmp_dir}/distill-override.yml"
 tmp_site="${tmp_dir}/site"
 
+source test/fixtures/stage_fixtures.sh
+
 cleanup() {
+  unstage_fixtures
   rm -rf "${tmp_dir}"
 }
 trap cleanup EXIT
+
+stage_fixture test/fixtures/posts/2018-12-22-distill.md _posts/2018-12-22-distill.md
+stage_fixture test/fixtures/bibliography/2018-12-22-distill.bib assets/bibliography/2018-12-22-distill.bib
 
 cat >"${tmp_override}" <<'YAML'
 # The site itself may turn distill off; the test always checks it with distill on.
