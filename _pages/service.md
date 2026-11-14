@@ -76,7 +76,7 @@ Service is an important part of my academic work. My current efforts focus on re
   <div class="row mt-3">
     <div class="col-12">
       <p>
-        My involvement with the <a href="https://gsa.umbc.edu/" target="_blank" rel="noopener">UMBC Graduate Student Association</a> has developed from college-level representation to executive leadership. I began as a senator representing the College of Natural and Mathematical Sciences, later served as Vice President, and now serve as President.
+        My involvement with the <a href="https://gsa.umbc.edu/" target="_blank" rel="noopener">UMBC Graduate Student Association</a> has developed from college-level representation to executive leadership. I began as a senator representing the College of Natural and Mathematical Sciences, later served as Vice President, and then as President.
       </p>
 
       <p>
@@ -84,7 +84,7 @@ Service is an important part of my academic work. My current efforts focus on re
       </p>
 
       <div class="service-role">
-        <strong>President</strong> July 2026–Present
+        <strong>President</strong> July 2026–October 2026
       </div>
       <div class="service-role">
         <strong>Vice President</strong> July 2025–July 2026

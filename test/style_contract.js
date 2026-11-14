@@ -54,8 +54,8 @@ for (const libraryKey of ["tikzjax", "tocbot"]) {
 }
 
 const gemfile = read("Gemfile");
-if (!/gem 'al_math', '= 1\.0\.1'/.test(gemfile)) {
-  failures.push("`Gemfile` should pin `al_math` to released version `1.0.1`.");
+if (!/gem 'al_math', '= 1\.0\.2'/.test(gemfile)) {
+  failures.push("`Gemfile` should pin `al_math` to released version `1.0.2`.");
 }
 if (/gem 'al_math',\s*:git =>/.test(gemfile)) {
   failures.push("`Gemfile` must not use git-branch pin for `al_math`; use released gem version.");
