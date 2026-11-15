@@ -8,11 +8,11 @@ category: Research
 related_publications: false
 ---
 
+<link rel="stylesheet" href="{{ '/assets/css/transparent-media.css' | relative_url }}">
+
 Inside the egg chamber of a fruit fly, a tiny group of about ten cells makes a remarkable journey. It leaves the tip of the chamber and squeezes between fifteen much larger neighbors until it reaches the egg cell. Biologists study this **border-cell cluster** because cells moving together in a group is how many tissues form, how wounds heal, and how some cancers spread.
 
-Our [3D phase-field model]({{ '/projects/cell-migration/' | relative_url }}) treats the whole cluster as one soft body. Here we open up that body. The cluster is built from individual cells that are bonded to each other, push against each other, and each lean in their own direction. This lets us ask how the interactions between the cells shape the journey.
-
-_Every animation on this page is a computer simulation, not a microscope recording. The time shown as "t = ..." is model time, which has no real-world unit yet._
+Our [3D phase-field model]({{ '/projects/cell-migration/' | relative_url }}) treats the whole cluster as one soft body. Here we open up that body. The cluster is built from individual cells that are bonded to each other, push against each other, and each lean in their own direction. This lets us ask how the interactions between the cells shape the journey. Every animation on this page is a computer simulation.
 
 <div class="row justify-content-center">
   <div class="col-12 mt-3">
@@ -69,12 +69,21 @@ The real cluster has two kinds of cells: several **border cells** on the outside
 <div class="row justify-content-center">
   <div class="col-12 col-lg-10 mt-3">
     <figure>
-      <video src="{{ '/assets/img/projects/cell-cluster-migration/cluster-closeup-v2.mp4' | relative_url }}" poster="{{ '/assets/img/projects/cell-cluster-migration/cluster-closeup-v2-poster.webp' | relative_url }}" class="img-fluid rounded z-depth-1" width="760" height="492" autoplay muted loop playsinline preload="metadata" title="The cluster up close" aria-label="The cluster up close"></video>
+      <div class="tmedia-labels" aria-hidden="true">
+        <span style="left: 18.2%">Outside view</span>
+        <span style="left: 76%">See-through view</span>
+      </div>
+      <span class="tmedia" style="aspect-ratio: 1280 / 404" role="img" title="The cluster up close" aria-label="The cluster up close, seen from outside and with the border cells made see-through">
+        <img src="{{ '/assets/img/projects/cell-cluster-migration/cluster-closeup-alpha-poster.webp' | relative_url }}" alt="" width="1280" height="404" loading="lazy">
+        <canvas></canvas>
+        <video src="{{ '/assets/img/projects/cell-cluster-migration/cluster-closeup-alpha.mp4' | relative_url }}" muted loop playsinline preload="none"></video>
+      </span>
+      <div class="tmedia-legend"><span style="--swatch: #0072b2">border cells</span><span style="--swatch: #d55e00">polar cells</span></div>
     </figure>
   </div>
 </div>
 <div class="caption">
-  The cluster up close during the journey. Left: seen from outside. Right: the border cells are made see-through so the two polar cells (orange) inside can be seen.
+  The cluster up close during the journey, turning slowly. Left: seen from outside. Right: the border cells (blue) are made see-through so the two polar cells (orange) inside can be seen.
 </div>
 
 ### Sharing space fairly
@@ -133,3 +142,5 @@ This project builds on joint work with N. Akhavan, A. George, M. Starz-Gaiano, a
 1. A. K. Aydin, N. Akhavan, A. S. George, M. Starz-Gaiano, B. E. Peercy. _Optimal transport for border cell cluster coupled with phase field model of egg chamber._ In preparation.
 2. N. Akhavan, A. George, M. Starz-Gaiano, B. E. Peercy. _Phase-field modeling of border cell cluster migration in Drosophila._ PLOS Computational Biology 22(4), e1014176 (2026). [Article](https://doi.org/10.1371/journal.pcbi.1014176)
 3. [Border Cell Migration in the Drosophila Egg Chamber]({{ '/projects/cell-migration/' | relative_url }}): our 3D phase-field model, in which the cluster is one soft body.
+
+<script src="{{ '/assets/js/transparent-media.js' | relative_url }}" defer></script>

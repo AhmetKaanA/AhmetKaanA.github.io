@@ -8,23 +8,27 @@ category: Research
 related_publications: false
 ---
 
+<link rel="stylesheet" href="{{ '/assets/css/transparent-media.css' | relative_url }}">
+
 ## Overview
 
 In the egg chamber of the fruit fly _Drosophila_, a small group of **border cells** breaks away from the outer cell layer at one tip. It then squeezes between fifteen large **nurse cells** until it reaches the **oocyte**, the future egg, at the other end. A chemical signal released by the oocyte shows the way, and the cluster moves by crawling along the surfaces of the nurse cells.
 
-We simulate this journey in 3D. The shape of the egg chamber comes from microscope images of a real chamber. The egg chamber is not standing still during the journey either: it grows, and the oocyte grows much faster than the nurse cells around it. In this model the cluster is a single soft body; a companion model builds it [cell by cell]({{ '/projects/cell-cluster-migration/' | relative_url }}).
-
-_All animations on this page are computer simulations, not microscope recordings._
+We simulate this journey in 3D, and every animation on this page is a computer simulation. The shape of the egg chamber comes from microscope images of a real chamber. The egg chamber is not standing still during the journey either: it grows, and the oocyte grows much faster than the nurse cells around it. In this model the cluster is a single soft body; a companion model builds it [cell by cell]({{ '/projects/cell-cluster-migration/' | relative_url }}).
 
 <div class="row justify-content-center">
-  <div class="col-10 col-sm-8 col-md-6 mt-3">
+  <div class="col-12 col-lg-10 mt-3">
     <figure>
-      <video src="{{ '/assets/img/projects/border-cell-migration/migration-3d-growing.mp4' | relative_url }}" poster="{{ '/assets/img/projects/border-cell-migration/migration-3d-growing-poster.webp' | relative_url }}" class="img-fluid rounded z-depth-1" width="456" height="452" autoplay muted loop playsinline preload="metadata" title="The border-cell cluster migrating through the growing egg chamber" aria-label="The border-cell cluster migrating through the growing egg chamber"></video>
+      <span class="tmedia" style="aspect-ratio: 1280 / 720" role="img" title="The border-cell cluster migrating through the growing egg chamber" aria-label="The border-cell cluster migrating through the growing egg chamber">
+        <img src="{{ '/assets/img/research-highlights/cell-migration-growth-poster.webp' | relative_url }}" alt="" width="1280" height="720" loading="lazy">
+        <canvas></canvas>
+        <video src="{{ '/assets/img/research-highlights/cell-migration-growth.mp4' | relative_url }}" muted loop playsinline preload="none"></video>
+      </span>
     </figure>
   </div>
 </div>
 <div class="caption">
-  The whole journey in 3D. The cluster (red) starts at the tip and travels between the nurse cells (gray) to the oocyte (blue), while the chamber grows around it.
+  The whole journey in 3D. The cluster (blue) starts at the tip and travels between the see-through nurse cells (gray) to the oocyte (purple), while the chamber grows around it.
 </div>
 
 <div class="row justify-content-center">
@@ -131,3 +135,5 @@ Once the cluster has reached the oocyte, a cut swept through the whole chamber s
 1. A. K. Aydin, N. Akhavan, A. S. George, M. Starz-Gaiano, B. E. Peercy. _Cell surface geometry guides three-dimensional border cell migration in the Drosophila egg chamber._ In preparation.
 2. N. Akhavan, A. George, M. Starz-Gaiano, B. E. Peercy. _Cell migration boundary motion in Drosophila egg chambers: a combined phase field and chemoattractant model._ arXiv:2604.01357 (2026). [arXiv](https://arxiv.org/abs/2604.01357) · [Code](https://github.com/Naghmeh-Akhavan/PFM_Feedback_Concentration_Model)
 3. N. Akhavan, A. George, M. Starz-Gaiano, B. E. Peercy. _Phase-field modeling of border cell cluster migration in Drosophila._ PLOS Computational Biology 22(4), e1014176 (2026). [Article](https://doi.org/10.1371/journal.pcbi.1014176)
+
+<script src="{{ '/assets/js/transparent-media.js' | relative_url }}" defer></script>

@@ -15,3 +15,6 @@ node_modules/
 output/playwright/
 test-results/
 vendor
+
+# Local archive: original media and conversion scripts, kept off git and out of the site build
+archive/

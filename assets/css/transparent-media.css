@@ -1,0 +1,65 @@
+/* Transparent 3D videos on the research pages (see assets/js/transparent-media.js). */
+
+/* The transparent poster, a canvas the player draws on, and the stacked video it reads. */
+.tmedia {
+  position: relative;
+  display: block;
+  width: 100%;
+}
+
+.tmedia > img,
+.tmedia > canvas,
+.tmedia > video {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.tmedia > video {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.tmedia.is-playing > img {
+  visibility: hidden;
+}
+
+/* A row of titles above a video, each centered over its view (left: n%), in the page's text
+   color so they read in both themes. */
+.tmedia-labels {
+  position: relative;
+  height: 1.6em;
+}
+
+.tmedia-labels > span {
+  position: absolute;
+  top: 0;
+  transform: translateX(-50%);
+  color: var(--global-text-color);
+  font-size: 0.95rem;
+  font-weight: 600;
+  white-space: nowrap;
+  pointer-events: none;
+}
+
+/* Color key under a video. */
+.tmedia-legend {
+  display: flex;
+  justify-content: center;
+  gap: 1.25rem;
+  margin-top: 0.5rem;
+  font-size: 0.9rem;
+}
+
+.tmedia-legend span::before {
+  content: "";
+  display: inline-block;
+  width: 0.8em;
+  height: 0.8em;
+  margin-right: 0.35em;
+  border-radius: 0.2em;
+  background: var(--swatch);
+  vertical-align: -0.05em;
+}

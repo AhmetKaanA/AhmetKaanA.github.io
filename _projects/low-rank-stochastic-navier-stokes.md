@@ -8,111 +8,27 @@ category: Research
 related_publications: true
 ---
 
-<style>
-  /*
-   * al-folio's core stylesheet makes wide display equations horizontally
-   * scrollable. On this equation-heavy project page, let them extend to their
-   * natural width instead. This page-level rule avoids a theme override.
-   */
-  mjx-container[jax="CHTML"][display="true"] {
-    overflow-x: visible;
-  }
-</style>
-
 ## Overview
 
 This project develops solvers for the **unsteady incompressible Navier–Stokes equations with uncertain viscosity**. We use a spectral stochastic Galerkin approach based on generalized polynomial chaos (gPC) expansions, and seek the corresponding gPC expansions of the velocity and pressure. A sequential solver for the underlying deterministic problem with the mean viscosity is used to predetermine the time-step sizes. Subsequently, in the formulation of the stochastic problem, the equations at these time steps are assembled into an all-at-once formulation. The coupling through both the time steps and the terms of the gPC expansion leads to a single large system.
 
 The central idea is to preserve the useful time–stochastic–space structure of this system instead of assembling and storing it as one unstructured vector or matrix. The solution is compressed in **Tensor Train (TT)** format, selected operators are approximated in **CANDECOMP/PARAFAC (CP)** format, and the resulting low-rank structure is used throughout the nonlinear and Krylov iterations.
 
-### Mathematical model
+### The model in brief
 
-Let $D\subset\mathbb{R}^2$ be the flow domain, $t\in(0,T]$, and $\boldsymbol{\xi}$ a vector of random parameters. We consider
-
-$$
-\frac{\partial \boldsymbol{u}}{\partial t}
--\nabla\cdot\!\left(\nu(\boldsymbol{\xi})
-\nabla\boldsymbol{u}\right)
-+(\boldsymbol{u}\cdot\nabla)\boldsymbol{u}
-+\nabla p
-=\boldsymbol{f},
-\qquad
-\nabla\cdot\boldsymbol{u}=0,
-$$
-
-where $\boldsymbol{u}$ is velocity, $p$ is pressure, and $\nu(\boldsymbol{\xi})$ is a positive random viscosity field. A generalized polynomial-chaos basis $\{\psi_\ell(\boldsymbol{\xi})\}$ is used to represent the stochastic
-dependence:
+The flow obeys the incompressible Navier–Stokes equations for the velocity $\boldsymbol{u}$ and the pressure $p$, with a viscosity $\nu$ that depends on a vector $\boldsymbol{\xi}$ of random parameters:
 
 $$
-\nu(\boldsymbol{\xi})
-=
-\sum_{\ell=1}^{n_\nu}
-\nu_\ell \psi_\ell(\boldsymbol{\xi}),
+\partial_t \boldsymbol{u} - \nabla\cdot\bigl(\nu(\boldsymbol{\xi})\nabla\boldsymbol{u}\bigr) + (\boldsymbol{u}\cdot\nabla)\boldsymbol{u} + \nabla p = \boldsymbol{f},
 $$
 
 $$
-\boldsymbol{u}(\boldsymbol{x},t,\boldsymbol{\xi})
-\approx
-\sum_{\ell=1}^{n_\xi}
-\boldsymbol{u}_\ell(\boldsymbol{x},t)
-\psi_\ell(\boldsymbol{\xi}),
-\qquad
-p(\boldsymbol{x},t,\boldsymbol{\xi})
-\approx
-\sum_{\ell=1}^{n_\xi}
-p_\ell(\boldsymbol{x},t)
-\psi_\ell(\boldsymbol{\xi}).
+\nabla\cdot\boldsymbol{u} = 0.
 $$
 
-After finite-element discretization in space, backward Euler in time, and
-stochastic Galerkin projection, all time levels can be assembled into the
-nonlinear saddle-point system
+Because the viscosity is uncertain, so are the velocity and the pressure. Each of them is written as a sum of fixed polynomials in $\boldsymbol{\xi}$ (a polynomial-chaos expansion) whose coefficients are ordinary flow fields. Once these coefficients are known, the mean, the variance and the full probability distribution of the flow follow directly.
 
-$$
-\begin{bmatrix}
-\mathbb{F}_u & \mathbb{B}^{T}\\
-\mathbb{B} & 0
-\end{bmatrix}
-\begin{bmatrix}
-\mathbf{u}\\
-\mathbf{p}
-\end{bmatrix}
-=
-\begin{bmatrix}
-\mathbf{f}_u\\
-\mathbf{f}_p
-\end{bmatrix},
-\qquad
-\mathbb{F}_u
-=
-\mathbb{M}+\mathbb{A}+\mathbb{N}(\mathbf{u}).
-$$
-
-Here, $\mathbb{M}$ contains the time coupling and mass terms,
-$\mathbb{A}$ contains stochastic diffusion terms, and
-$\mathbb{N}(\mathbf{u})$ is the nonlinear convection operator. The velocity coefficients can be viewed as a three-way tensor with the following Tensor-Train representation:
-
-$$
-	\boldsymbol{u}
-\;=\;
-\sum_{\alpha=1}^{\kappa_1}\sum_{\beta=1}^{\kappa_2}\bigl(u^{(1)}_\alpha\bigr)\otimes
-\bigl(u^{(2)}_{\alpha,\beta}\bigr)\otimes
-\bigl(u^{(3)}_\beta\bigr).
-$$
-
-The diffusion and convection operators are also compressed. Their CP
-approximations have the separable form
-
-$$
-\widehat{\mathbb{X}}
-=
-\sum_{r=1}^{R}
-X_r^{(t)}
-\otimes
-X_r^{(\xi)}
-\otimes
-X_r^{(x)},
-$$
+The equations are discretized with finite elements in space and backward Euler in time, and projected onto the polynomials (stochastic Galerkin). All time steps and all polynomial coefficients are then solved together as one large nonlinear system. Its unknowns form a three-way array, indexed by time step, polynomial and spatial degree of freedom. Instead of storing this array in full, the solver keeps it in **Tensor Train** form, a chain of three much smaller factors. The large operators are stored in **CP** form, as short sums of products of separate time, stochastic and spatial matrices. Every step of the solver works directly on these compressed forms.
 
 The numerical experiments use flow through a narrow channel with a symmetric constriction. A time-dependent parabolic profile enters from the left, the upper and lower walls satisfy no-slip conditions, and a natural outflow condition is imposed on the right. The domain is discretized using a quadrilateral Taylor–Hood mesh.
 
