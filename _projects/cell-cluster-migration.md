@@ -1,6 +1,6 @@
 ---
 layout: page
-title: "Border Cell Migration, Cell by Cell: Interactions Inside the Cluster"
+title: "Optimal Transport for Border Cell Migration: Interactions Inside the Cluster"
 description: A 3D model of the border-cell cluster built from individual cells, with cell shapes from optimal transport, to study how the cells of the cluster work together on their way through the egg chamber.
 img: assets/img/projects/cell-cluster-migration/thumbnail-3x2.png
 importance: 1
@@ -130,5 +130,6 @@ Compared with our earlier one-blob model, both clusters wait in the tip at first
 
 This project builds on joint work with N. Akhavan, A. George, M. Starz-Gaiano, and B. E. Peercy.
 
-1. N. Akhavan, A. George, M. Starz-Gaiano, B. E. Peercy. _Phase-field modeling of border cell cluster migration in Drosophila._ PLOS Computational Biology 22(4), e1014176 (2026). [Article](https://doi.org/10.1371/journal.pcbi.1014176)
-2. [Border Cell Migration in the Drosophila Egg Chamber]({{ '/projects/cell-migration/' | relative_url }}): our 3D phase-field model, in which the cluster is one soft body.
+1. A. K. Aydin, N. Akhavan, A. S. George, M. Starz-Gaiano, B. E. Peercy. _Optimal transport for border cell cluster coupled with phase field model of egg chamber._ In preparation.
+2. N. Akhavan, A. George, M. Starz-Gaiano, B. E. Peercy. _Phase-field modeling of border cell cluster migration in Drosophila._ PLOS Computational Biology 22(4), e1014176 (2026). [Article](https://doi.org/10.1371/journal.pcbi.1014176)
+3. [Border Cell Migration in the Drosophila Egg Chamber]({{ '/projects/cell-migration/' | relative_url }}): our 3D phase-field model, in which the cluster is one soft body.

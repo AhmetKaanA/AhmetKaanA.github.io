@@ -124,6 +124,7 @@ cv:
       - bullet: "A.K. Aydin, J. Li, *Neural Reduced-Order Approximation of Parametrized Stochastic Galerkin Solutions*."
       - bullet: "A.K. Aydin, B. Sousedík, *Rank-One Inverse Approximations for Hierarchical Stochastic Galerkin Preconditioners Across Polynomial Chaos Models*."
       - bullet: "A.K. Aydin, N. Akhavan, A.S. George, M. Starz-Gaiano, B.E. Peercy, *Cell Surface Geometry Guides Three-Dimensional Border Cell Migration in the Drosophila Egg Chamber*."
+      - bullet: "A.K. Aydin, N. Akhavan, A.S. George, M. Starz-Gaiano, B.E. Peercy, *Optimal Transport for Border Cell Cluster Coupled with Phase Field Model of Egg Chamber*."
 
     Research Experience:
       - bullet: |-
