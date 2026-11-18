@@ -133,7 +133,7 @@ Once the cluster has reached the oocyte, a cut swept through the whole chamber s
 ## References
 
 1. A. K. Aydin, N. Akhavan, A. S. George, M. Starz-Gaiano, B. E. Peercy. _Cell surface geometry guides three-dimensional border cell migration in the Drosophila egg chamber._ In preparation.
-2. N. Akhavan, A. George, M. Starz-Gaiano, B. E. Peercy. _Cell migration boundary motion in Drosophila egg chambers: a combined phase field and chemoattractant model._ arXiv:2604.01357 (2026). [arXiv](https://arxiv.org/abs/2604.01357) · [Code](https://github.com/Naghmeh-Akhavan/PFM_Feedback_Concentration_Model)
+2. N. Akhavan, A. S. George, A. K. Aydin, M. Starz-Gaiano, B. E. Peercy. _Cell migration boundary motion in Drosophila egg chambers: a combined phase field and chemoattractant model._ npj Systems Biology and Applications, accepted (2026). arXiv:2604.01357v2. [arXiv](https://arxiv.org/abs/2604.01357v2) · [Code](https://github.com/Naghmeh-Akhavan/PFM_Feedback_Concentration_Model)
 3. N. Akhavan, A. George, M. Starz-Gaiano, B. E. Peercy. _Phase-field modeling of border cell cluster migration in Drosophila._ PLOS Computational Biology 22(4), e1014176 (2026). [Article](https://doi.org/10.1371/journal.pcbi.1014176)
 
 <script src="{{ '/assets/js/transparent-media.js' | relative_url }}" defer></script>

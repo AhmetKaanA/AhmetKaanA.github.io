@@ -81,6 +81,12 @@ cv:
           - "Senior project: *Affine and Projective Planes*."
 
     Publications:
+      - title: "Cell Migration Boundary Motion in Drosophila Egg Chambers: A Combined Phase Field and Chemoattractant Model"
+        publisher: npj Systems Biology and Applications
+        releaseDate: 2026
+        url: https://arxiv.org/abs/2604.01357v2
+        summary: "N. Akhavan, A.S. George, A.K. Aydin, M. Starz-Gaiano, B.E. Peercy. Accepted, 2026. arXiv:2604.01357v2."
+
       - title: Robust Model Reductions for the Boundary Feedback Stabilization of Magnetizable Piezoelectric Beams
         publisher: Evolution Equations and Control Theory
         releaseDate: 2026
@@ -116,15 +122,14 @@ cv:
         url: https://doi.org/10.1109/CDC51059.2022.9992484
         summary: "A.Ö. Özer, A.K. Aydin. Cancun, Mexico."
 
-    Submitted and Under Revision:
-      - bullet: "A.K. Aydin, B. Sousedík, [*A Mean-Informed Low-Rank Monolithic Stochastic Galerkin Solver for the Unsteady Navier--Stokes Equations*](https://arxiv.org/abs/2608.07526), arXiv:2608.07526, 2026. Under review at *SIAM Journal on Scientific Computing*."
-      - bullet: "N. Akhavan, A.S. George, A.K. Aydin, M. Starz-Gaiano, B.E. Peercy, *Cell Migration Boundary Motion in Drosophila Egg Chambers: A Combined Phase Field and Chemoattractant Model*, under revision."
+    Preprints:
+      - bullet: "A.K. Aydin, B. Sousedík, [*A Mean-Informed Low-Rank Monolithic Stochastic Galerkin Solver for the Unsteady Navier--Stokes Equations*](https://arxiv.org/abs/2608.07526), arXiv:2608.07526, 2026."
 
     In Preparation:
       - bullet: "A.K. Aydin, J. Li, *Neural Reduced-Order Approximation of Parametrized Stochastic Galerkin Solutions*."
       - bullet: "A.K. Aydin, B. Sousedík, *Rank-One Inverse Approximations for Hierarchical Stochastic Galerkin Preconditioners Across Polynomial Chaos Models*."
       - bullet: "A.K. Aydin, N. Akhavan, A.S. George, M. Starz-Gaiano, B.E. Peercy, *Cell Surface Geometry Guides Three-Dimensional Border Cell Migration in the Drosophila Egg Chamber*."
-      - bullet: "A.K. Aydin, N. Akhavan, A.S. George, M. Starz-Gaiano, B.E. Peercy, *Optimal Transport for Border Cell Cluster Coupled with Phase Field Model of Egg Chamber*."
+      - bullet: "N. Akhavan, A.K. Aydin, A.S. George, M. Starz-Gaiano, B.E. Peercy, *Optimal Transport for Border Cell Cluster Coupled with Phase Field Model of Egg Chamber*."
 
     Research Experience:
       - bullet: |-
@@ -306,7 +311,3 @@ cv:
           - boundary observability
           - Lyapunov stability
           - feedback and sensor design
-      - name: Languages
-        keywords:
-          - English
-          - Turkish
